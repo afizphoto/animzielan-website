@@ -1,6 +1,12 @@
-# Animzielan.com — Website V1.0
+# Animzielan.com — Website V1.1
 
 Tema: Midnight Navy, Off White, Muted Gold. Next.js App Router + Supabase. Laman ini berasingan daripada sistem.animzielan.com dan tidak menggunakan data kewangan atau pelanggan sedia ada.
+
+## Pembetulan V1.1 (404)
+- Laluan `app/[[...slug]]/page.js` diganti dengan fail halaman biasa dalam `app/page.js`, `app/about/page.js`, `app/portfolio/page.js`, `app/emcee/page.js`, `app/gallery/page.js`, `app/rates/page.js`, `app/contact/page.js` dan `app/admin/page.js`.
+- Untuk repository sedia ada: jika folder `app/[[...slug]]` pernah ditambah, padam fail routing lama itu dahulu untuk mengelakkan konflik laluan. Upload kandungan ZIP ini ke root repository yang sama dan commit. Pastikan semua lapan fail halaman berada dalam GitHub. Jangan buat projek Vercel baharu.
+- Fail SQL dan fungsi website dikekalkan. Tidak perlu ubah database atau domain untuk pembetulan ini.
+- Fail JavaScript diperiksa dari segi sintaks; production build dan deployment masih perlu diuji.
 
 ## 1. GitHub dan Vercel
 1. Extract ZIP. Upload isi folder projek ke repository GitHub baharu (package.json mesti di root). Jangan upload fail .env.local.
